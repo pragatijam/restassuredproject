@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
+  <reporter-output>
+    <line>
+      <![CDATA[start test]]>
+    </line>
+    <line>
+      <![CDATA[test is fail]]>
+    </line>
+    <line>
+      <![CDATA[start test]]>
+    </line>
+    <line>
+      <![CDATA[test success]]>
+    </line>
+    <line>
+      <![CDATA[start test]]>
+    </line>
+    <line>
+      <![CDATA[test is fail]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-02-02T19:16:35 EST" name="Suite" finished-at="2023-02-02T19:17:26 EST" duration-ms="50307">
+    <groups>
+      <group name="regression">
+        <method signature="Assertionsoft.VerifyDashboardAfterLogin()[pri:2, instance:testngprojects.Assertionsoft@693fe6c9]" name="VerifyDashboardAfterLogin" class="testngprojects.Assertionsoft"/>
+        <method signature="Assertionsoft.VerifyDashboardPageBlock()[pri:3, instance:testngprojects.Assertionsoft@693fe6c9]" name="VerifyDashboardPageBlock" class="testngprojects.Assertionsoft"/>
+        <method signature="Assertionsoft.VerifyTitleofPage()[pri:1, instance:testngprojects.Assertionsoft@693fe6c9]" name="VerifyTitleofPage" class="testngprojects.Assertionsoft"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="Assertionsoft.VerifyDashboardAfterLogin()[pri:2, instance:testngprojects.Assertionsoft@693fe6c9]" name="VerifyDashboardAfterLogin" class="testngprojects.Assertionsoft"/>
+        <method signature="Assertionsoft.VerifyurlofPage()[pri:0, instance:testngprojects.Assertionsoft@693fe6c9]" name="VerifyurlofPage" class="testngprojects.Assertionsoft"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-02-02T19:16:35 EST" name="Test" finished-at="2023-02-02T19:17:26 EST" duration-ms="50307">
+      <class name="testngprojects.Assertionsoft">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:16:35 EST" name="initBrowser" finished-at="2023-02-02T19:17:24 EST" duration-ms="48858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="VerifyurlofPage()[pri:0, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:17:24 EST" name="VerifyurlofPage" finished-at="2023-02-02T19:17:24 EST" duration-ms="23" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+verify url expected [http://dthahab.com/Setting/Splash/Create] but found [http://dthahab.com/Account/Login?ReturnUrl=%2fSetting%2fSplash%2fCreate]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+verify url expected [http://dthahab.com/Setting/Splash/Create] but found [http://dthahab.com/Account/Login?ReturnUrl=%2fSetting%2fSplash%2fCreate]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testngprojects.Assertionsoft.VerifyurlofPage(Assertionsoft.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[start test]]>
+            </line>
+            <line>
+              <![CDATA[test is fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyurlofPage -->
+        <test-method signature="VerifyTitleofPage()[pri:1, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:17:24 EST" name="VerifyTitleofPage" finished-at="2023-02-02T19:17:24 EST" duration-ms="11" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[start test]]>
+            </line>
+            <line>
+              <![CDATA[test success]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyTitleofPage -->
+        <test-method signature="VerifyDashboardAfterLogin()[pri:2, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:17:24 EST" name="VerifyDashboardAfterLogin" finished-at="2023-02-02T19:17:25 EST" duration-ms="641" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h4[text()='Dashboard']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be0d9108631993a0dd9913861da62efe, findElement {using=xpath, value=//h4[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\KING\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55296/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be0d9108631993a0dd9913861da62efe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[text()='Dashboard']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be0d9108631993a0dd9913861da62efe, findElement {using=xpath, value=//h4[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\KING\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55296}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55296/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: be0d9108631993a0dd9913861da62efe
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+at testngprojects.MethodToRunTestCasesOnCurrentPage.GetPageText(MethodToRunTestCasesOnCurrentPage.java:14)
+at testngprojects.Assertionsoft.VerifyDashboardAfterLogin(Assertionsoft.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[start test]]>
+            </line>
+            <line>
+              <![CDATA[test is fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyDashboardAfterLogin -->
+        <test-method signature="VerifyDashboardPageBlock()[pri:3, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:17:25 EST" name="VerifyDashboardPageBlock" finished-at="2023-02-02T19:17:25 EST" depends-on-methods="testngprojects.Assertionsoft.VerifyDashboardAfterLogin" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Assertionsoft.VerifyDashboardPageBlock()[pri:3, instance:testngprojects.Assertionsoft@693fe6c9] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Assertionsoft.VerifyDashboardPageBlock()[pri:3, instance:testngprojects.Assertionsoft@693fe6c9] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDashboardPageBlock -->
+        <test-method is-config="true" signature="teardDown()[pri:0, instance:testngprojects.Assertionsoft@693fe6c9]" started-at="2023-02-02T19:17:25 EST" name="teardDown" finished-at="2023-02-02T19:17:26 EST" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardDown -->
+      </class> <!-- testngprojects.Assertionsoft -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
