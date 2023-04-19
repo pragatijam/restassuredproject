@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-18T17:12:10 IST" name="Suite" finished-at="2023-04-18T17:12:14 IST" duration-ms="4485">
+    <groups>
+    </groups>
+    <test started-at="2023-04-18T17:12:10 IST" name="Test" finished-at="2023-04-18T17:12:14 IST" duration-ms="4485">
+      <class name="ecommarceapi.AddProduct">
+        <test-method signature="AddProduct1()[pri:0, instance:ecommarceapi.AddProduct@66d3eec0]" started-at="2023-04-18T17:12:13 IST" name="AddProduct1" finished-at="2023-04-18T17:12:14 IST" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProduct1 -->
+      </class> <!-- ecommarceapi.AddProduct -->
+      <class name="ecommarceapi.PlaceOrder">
+        <test-method signature="Placeorder1()[pri:0, instance:ecommarceapi.PlaceOrder@1e04fa0a]" started-at="2023-04-18T17:12:14 IST" name="Placeorder1" finished-at="2023-04-18T17:12:14 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Placeorder1 -->
+      </class> <!-- ecommarceapi.PlaceOrder -->
+      <class name="ecommarceapi.Login">
+        <test-method signature="LoginMethod()[pri:0, instance:ecommarceapi.Login@2b91004a]" started-at="2023-04-18T17:12:10 IST" name="LoginMethod" finished-at="2023-04-18T17:12:13 IST" duration-ms="3160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginMethod -->
+      </class> <!-- ecommarceapi.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
